@@ -61,7 +61,13 @@ terraform apply
 * Consistent Environment Provisioning
 
 ---
+## High Level Design
 
+![HLD](diagrams/HLD.png)
+
+## Low Level Design
+
+![LLD](diagrams/LLD.png)
 ## Author
 
 Kumar Manglam
