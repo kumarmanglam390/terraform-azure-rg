@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Terraform Azure RG HLD-LLD">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="hld" value="HLD - Terraform Azure Resource Group" style="text;html=1;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a1" value="DevOps Engineer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="Terraform Engine" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="Azure Provider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="Azure Resource Manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="100" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" value="Azure Resource Group" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="100" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;" edge="1" parent="1" source="a1" target="a2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=block;" edge="1" parent="1" source="a2" target="a3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=block;" edge="1" parent="1" source="a3" target="a4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=block;" edge="1" parent="1" source="a4" target="a5"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="lld" value="LLD - Execution Flow" style="text;html=1;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="300" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b1" value="terraform.tfvars" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="variables.tf" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="main.tf" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="Azure Provider" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="ARM" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="Resource Group" style="rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="360" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="f1" style="endArrow=block;" edge="1" parent="1" source="b1" target="b2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f2" style="endArrow=block;" edge="1" parent="1" source="b2" target="b3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f3" style="endArrow=block;" edge="1" parent="1" source="b3" target="b4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f4" style="endArrow=block;" edge="1" parent="1" source="b4" target="b5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f5" style="endArrow=block;" edge="1" parent="1" source="b5" target="b6"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
